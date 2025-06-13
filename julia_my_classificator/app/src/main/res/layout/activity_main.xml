@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_b"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/text_luz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Luminosidade: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_proximidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proximidade: "
+        android:textSize="18sp"
+        android:layout_below="@id/text_luz"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btn_devolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Devolver classificações"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text_proximidade"
+        android:layout_marginTop="40dp"/>
+</RelativeLayout>
