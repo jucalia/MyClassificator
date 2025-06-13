@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/classificar_leituras"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_lanterna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:minWidth="48dp"
+        android:enabled="false"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:text="@string/lanterna"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_motor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:minWidth="48dp"
+        android:enabled="false"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/switch_lanterna"
+        android:layout_marginStart="120dp"
+        android:text="@string/vibracao"/>
+
+</RelativeLayout>
